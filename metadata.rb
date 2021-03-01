@@ -1,6 +1,6 @@
 name 'syslog-provisioning'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'hiboma'
+maintainer_email 'hiroyan@gmail.com'
 license 'All Rights Reserved'
 description 'Installs/Configures syslog-provisioning'
 long_description 'Installs/Configures syslog-provisioning'
