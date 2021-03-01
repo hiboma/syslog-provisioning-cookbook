@@ -1,2 +1,2 @@
-default['event_handler']['git_repo'] = 'https://github.com/example/example'
-default['event_handler']['git_hash'] = 'undefined'
+default['syslog-provisioning']['git_repo'] = `git remote get-url --push origin`.chomp
+default['syslog-provisioning']['git_hash'] = `git log -1 --pretty=format:"%H"`.chomp
