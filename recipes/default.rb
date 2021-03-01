@@ -6,8 +6,8 @@
 require 'syslog'
 
 # Chef.event_handler 内では、node オブジェクトを呼ぶのがちょっと面倒なのでここで入れちゃう
-git_repo = node[:event_handler][:git_repo]
-git_hash = node[:event_handler][:git_hash]
+git_repo = node[:'syslog-provisioning'][:git_repo]
+git_hash = node[:'syslog-provisioning'][:git_hash]
 
 # イベントタイプ一覧はこちら https://docs.chef.io/handlers/#event-types
 Chef.event_handler do
