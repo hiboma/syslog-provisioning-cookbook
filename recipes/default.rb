@@ -15,7 +15,7 @@ git_hash = node[:'syslog-provisioning'][:git_hash]
 Chef.event_handler do
   on :converge_start do |run_context|
     Syslog.open(tag) do |syslog|
-      syslog.info("provisioning starting repository:%s revision:%s", git_repo, git_hash)
+      syslog.info("provisioning started repository:%s revision:%s", git_repo, git_hash)
     end
   end
 end
