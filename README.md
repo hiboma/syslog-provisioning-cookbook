@@ -18,6 +18,10 @@ Then, add 'include_recipe' to cookbooks/base/recipes/default.rb.
 include_recipe 'syslog-provisioning'
 ```
 
+`cookbooks/base/attributes/syslog-provisioning_tmp.rb` is not need to be version controlled. it can be ignored by `.gitignore`.
+
+### Notice
+
 If your receipes dont't have ***base*** cookbooks, please find one corresponded to.
 
 ## Special Thanks!!!
